@@ -6,6 +6,21 @@ Nome: Diego Rian da Silva
 Nome: Rafael Roberto de Jesus Ribeiro
 
 
+## Identificação do problema
+
+### O problema
+Lojas de varejo online registram milhares de compras, mas não sabem **quais produtos costumam ser comprados juntos**. Sem essa informação, não dá para sugerir produtos associados, montar combos ou organizar promoções com base em dados.
+
+### Pergunta que o projeto responde
+> **Quais itens aparecem juntos nas compras, e com que força essa associação acontece?**
+
+### Por que não é trivial
+- **Muitos produtos e poucas combinações repetidas:** na base usada, são 4.002 produtos em 19.773 compras, e a maioria dos produtos é rara (1.148 aparecem em menos de 20 compras). Por isso, a matriz de compras é muito esparsa.
+- **Número de combinações possível enorme:** testar todas as combinações de produtos é inviável, e é por isso que usamos algoritmos de mineração de padrões frequentes.
+- **Regras enganosas:** um suporte mínimo muito baixo gera milhares de regras, e parte delas se apoia em poucas compras, é óbvia (variantes do mesmo produto) ou só reflete a popularidade de um item. Distinguir regras úteis de ruído faz parte do problema.
+- **Dados reais com ruído:** a base tem cancelamentos, taxas, fretes, preços zerados e quantidades negativas, que precisam ser tratados para não gerar associações falsas.
+
+
 # Projeto: Comparação de Algoritmos Apriori e FP-Growth
 
 Este projeto tem como objetivo realizar a mineração de regras de associação e análise exploratória de dados, comparando o desempenho e a execução dos algoritmos **Apriori** e **FP-Growth** aplicados a conjuntos de dados transacionais.
