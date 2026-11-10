@@ -1,4 +1,4 @@
-Projeto IA II: Apriori e FP-Growth
+**Projeto IA II: Apriori e FP-Growth**
 
 **Quais itens aparecem juntos nas compras?** Mineração de regras de associação em compras de varejo online, comparando os algoritmos **Apriori** e **FP-Growth**.
 
