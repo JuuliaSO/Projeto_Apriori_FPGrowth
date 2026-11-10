@@ -193,7 +193,6 @@ Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (
 | Ana Júlia Soares de Oliveira | (preencher) |
 | Arthur Pires Antunes | (preencher) |
 | Diego Rian da Silva | (preencher) |
-| Gabriel Estevão dos Santos Silveira | (preencher) |
 | Rafael Roberto de Jesus Ribeiro | (preencher) |
 
 ---
