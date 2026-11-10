@@ -1,4 +1,4 @@
-# Projeto IA II: Apriori e FP-Growth
+<img width="762" height="373" alt="image" src="https://github.com/user-attachments/assets/4e996506-3f64-4550-96a0-d492893946c5" /># Projeto IA II: Apriori e FP-Growth
 
 **Quais itens aparecem juntos nas compras?** Mineração de regras de associação em compras de varejo online, comparando os algoritmos **Apriori** e **FP-Growth**.
 
@@ -150,7 +150,8 @@ Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (
 |---|---|---|---|---|
 | 3% | 141 | 0,14 | 0,53 | Apriori |
 | 2% | 382 | 0,44 | 0,94 | Apriori |
-| 1% | 1.874 | 2,75 | 2,41 | FP-Growth |
+| 1,1% | 1.455 | 3,19 | 3,32 | Apriori |
+| 1% | 1.874 | 4,07 | 3,87 | FP-Growth |
 | 0,5% | 15.877 | 10,72 | 6,33 | FP-Growth |
 | 0,3% | 157.933 | 47,25 | 17,13 | FP-Growth |
 
