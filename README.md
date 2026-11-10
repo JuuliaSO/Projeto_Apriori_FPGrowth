@@ -1,4 +1,4 @@
-<img width="762" height="373" alt="image" src="https://github.com/user-attachments/assets/4e996506-3f64-4550-96a0-d492893946c5" /># Projeto IA II: Apriori e FP-Growth
+Projeto IA II: Apriori e FP-Growth
 
 **Quais itens aparecem juntos nas compras?** Mineração de regras de associação em compras de varejo online, comparando os algoritmos **Apriori** e **FP-Growth**.
 
