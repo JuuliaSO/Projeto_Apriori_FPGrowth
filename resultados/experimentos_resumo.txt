@@ -1,0 +1,72 @@
+Compras: 19,773 | Produtos: 4,002 | Confianca fixa: 50%
+
+======================================================================
+E1 - Apriori x FP-Growth: tempo de execucao
+HIPOTESE: Apriori e FP-Growth encontram os mesmos conjuntos frequentes,
+mas o tempo de execucao pode diferir conforme o suporte minimo.
+ALTERACAO: o algoritmo (mesmos dados e mesmo suporte).
+METODO: mediana de 3 execucao(oes) (1 para suporte < 0,5%); mede so a mineracao.
+======================================================================
+suporte 3.00%: Apriori 0.14s | FP-Growth 0.53s | conjuntos=141 | iguais=sim
+suporte 2.00%: Apriori 0.44s | FP-Growth 0.94s | conjuntos=382 | iguais=sim
+suporte 1.00%: Apriori 2.75s | FP-Growth 2.41s | conjuntos=1,874 | iguais=sim
+suporte 0.50%: Apriori 10.72s | FP-Growth 6.33s | conjuntos=15,877 | iguais=sim
+suporte 0.30%: Apriori 47.25s | FP-Growth 17.13s | conjuntos=157,933 | iguais=sim
+
+======================================================================
+E2 - Variacao do suporte minimo
+HIPOTESE: diminuir o suporte minimo aumenta a quantidade de conjuntos
+frequentes e de regras (e que o crescimento seja bem mais que proporcional).
+ALTERACAO: suporte minimo; confianca fixa em 50%.
+======================================================================
+suporte 5.00%: conjuntos=33 | 3+ itens=0 | regras=0
+suporte 3.00%: conjuntos=141 | 3+ itens=0 | regras=13
+suporte 2.00%: conjuntos=382 | 3+ itens=3 | regras=60
+suporte 1.00%: conjuntos=1,874 | 3+ itens=236 | regras=841
+suporte 0.50%: conjuntos=15,877 | 3+ itens=6,504 | regras=20725
+suporte 0.30%: conjuntos=157,933 | 3+ itens=122,923 | regras=n/a
+
+======================================================================
+E3 - Regras de associacao x baseline (mais vendidos)
+HIPOTESE: as regras revelam relacoes entre produtos que o ranking dos
+mais vendidos nao mostra.
+ALTERACAO: comparar regras (suporte 1%, confianca 50%)
+com o ranking de popularidade, usando suporte, confianca e lift.
+======================================================================
+Regras geradas: 841
+Lift: mediana 12.5 | minimo 4.74 | maximo 78.8
+Regras com lift > 1: 841 (100%)
+Regras cujo consequente esta no top 10 do baseline: 179 (21%)
+Produtos distintos nas regras: 189 | fora do top 50 do baseline: 149 (79%)
+Regras formadas so por produtos fora do top 50: 184
+
+Top 5 regras por lift:
+  HERB MARKER THYME  ->  HERB MARKER PARSLEY, HERB MARKER ROSEMARY  (conf 85.7%, lift 78.8)
+  HERB MARKER PARSLEY, HERB MARKER ROSEMARY  ->  HERB MARKER THYME  (conf 94.4%, lift 78.8)
+  HERB MARKER ROSEMARY  ->  HERB MARKER PARSLEY, HERB MARKER THYME  (conf 84.6%, lift 78.5)
+  HERB MARKER PARSLEY, HERB MARKER THYME  ->  HERB MARKER ROSEMARY  (conf 95.3%, lift 78.5)
+  HERB MARKER ROSEMARY  ->  HERB MARKER BASIL, HERB MARKER THYME  (conf 83.3%, lift 78.5)
+
+======================================================================
+E4 - Analise de tres erros / limitacoes
+======================================================================
+
+[Erro 1] Suporte minimo muito baixo
+HIPOTESE: com suporte muito baixo, o numero de conjuntos e regras explode
+e a lista fica grande demais para alguem analisar.
+  suporte 1%: 1,874 conjuntos | regras: 841
+  suporte 0.5%: 15,877 conjuntos | regras: 20725
+  suporte 0.3%: 157,933 conjuntos | regras: n/a (muito grande)
+
+[Erro 2] Dados esparsos: regras fortes no papel, mas com pouca evidencia
+HIPOTESE: com suporte baixo, aparecem regras com confianca alta baseadas
+em poucas compras, que podem ser coincidencia.
+  Regras com confianca >= 90% (suporte 0,5%): 927
+  Dessas, apoiadas em menos de 150 compras:   681 (73%)
+
+[Erro 3] Regras obvias ou redundantes
+HIPOTESE: parte das regras liga variantes do mesmo produto (cores/modelos)
+ou aparece duplicada em pares A->B e B->A, sem informacao nova.
+  Regras (suporte 1%, confianca 50%): 841
+  Regras entre variantes do mesmo produto (heuristica: >= 50% das palavras em comum): 323 (38%)
+  Regras que tem a regra espelho (B->A tambem existe): 180 (21%)

@@ -1,0 +1,6 @@
+﻿Suporte (%);Conjuntos frequentes;Tempo Apriori (s);Tempo FP-Growth (s);Mais rapido;Mesmos conjuntos;Mesmas regras
+3,0;141;0,14;0,53;Apriori;sim;sim
+2,0;382;0,44;0,94;Apriori;sim;sim
+1,0;1874;2,75;2,41;FP-Growth;sim;sim
+0,5;15877;10,72;6,33;FP-Growth;sim;sim
+0,3;157933;47,25;17,13;FP-Growth;sim;n/a
