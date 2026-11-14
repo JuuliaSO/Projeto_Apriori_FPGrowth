@@ -66,6 +66,13 @@ if not all(coluna in df.columns for coluna in colunas):
     st.stop()
 
 
+# Limpar espaços sobrando no começo e no fim dos nomes dos produtos.
+# Sem isso, o mesmo produto escrito com espaço extra conta como dois
+# (4.013 em vez de 4.002), igual ao tratamento do eda_baseline.py.
+
+df["Description"] = df["Description"].astype("string").str.strip()
+
+
 # Criar uma cesta por compra
 # Não aplicamos novos filtros ao dataset.
 
