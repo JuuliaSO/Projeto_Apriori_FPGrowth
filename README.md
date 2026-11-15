@@ -187,18 +187,11 @@ Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (
 ---
 
 
-| Integrante |
-|---|---|
-| Ana Júlia Soares de Oliveira | 
-| Arthur Pires Antunes | 
-| Diego Rian da Silva | 
-| Rafael Roberto de Jesus Ribeiro | 
-
 ---
 
 ## Materiais
 
-- Resumo expandido: [`Docs/Grupo_5_Resumo.pdf`](Docs/Grupo_5_Resumo.pdf)
+- Resumo expandido: [`Docs/Grupo_5_Resumo_Expandido.pdf`](Docs/Grupo_5_Resumo_Expandido.pdf)
 - Diário de uso de IA: [`Docs/Grupo_5_Diario_de_IA.pdf`](Docs/Grupo_5_Diario_de_IA.pdf)
 - Checklist do Checkpoint 1: [`Docs/Grupo_5_Checklist_27_10.pdf`](Docs/Grupo_5_Checklist_27_10.pdf)
 - Referências: [`Referencias_artigo/`](Referencias_artigo/)
