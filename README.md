@@ -198,7 +198,7 @@ Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (
 
 ## Materiais
 
-- Resumo expandido: [`Docs/Grupo_5_Resumo.pdf`](Docs/Grupo_5_Resumo.pdf)
+- Resumo expandido: [`Docs/Grupo_5_Resumo_Expandido.pdf`](Docs/Grupo_5_Resumo_Expandido.pdf)
 - Diário de uso de IA: [`Docs/Grupo_5_Diario_de_IA.pdf`](Docs/Grupo_5_Diario_de_IA.pdf)
 - Checklist do Checkpoint 1: [`Docs/Grupo_5_Checklist_27_10.pdf`](Docs/Grupo_5_Checklist_27_10.pdf)
 - Referências: [`Referencias_artigo/`](Referencias_artigo/)
