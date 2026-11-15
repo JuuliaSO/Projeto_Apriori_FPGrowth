@@ -204,3 +204,5 @@ Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (
 - Referências: [`Referencias_artigo/`](Referencias_artigo/)
 
 <!-- Adicionar aqui prints ou GIF do protótipo, por exemplo: ![Protótipo](Docs/img/app.png) -->
+![Aba Loja](Docs/img/app_loja.png)
+![Aba Laboratório](Docs/img/app_laboratorio.png)
