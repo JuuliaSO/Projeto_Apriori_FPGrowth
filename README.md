@@ -144,14 +144,13 @@ A contagem de conjuntos e regras é a mesma em qualquer computador. Os **tempos*
 
 **E1: tempo (mesmos dados e parâmetros)**
 
-Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (em segundos) muda com o suporte:
+Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (em segundos) muda com o suporte: com suporte alto o Apriori é mais rápido, e a vantagem passa para o FP-Growth por volta de 1%
 
 | Suporte | Conjuntos | Apriori | FP-Growth | Mais rápido |
 |---|---|---|---|---|
 | 3% | 141 | 0,14 | 0,53 | Apriori |
 | 2% | 382 | 0,44 | 0,94 | Apriori |
-| 1,1% | 1.455 | 3,19 | 3,32 | Apriori |
-| 1% | 1.874 | 4,07 | 3,87 | FP-Growth |
+| 1% | 1.874 | 2,75 | 2,41 | FP-Growth |
 | 0,5% | 15.877 | 10,72 | 6,33 | FP-Growth |
 | 0,3% | 157.933 | 47,25 | 17,13 | FP-Growth |
 
@@ -187,14 +186,13 @@ Apriori e FP-Growth encontram exatamente os mesmos conjuntos e regras. O tempo (
 
 ---
 
-## Responsabilidades do grupo
 
-| Integrante | Contribuição |
+| Integrante |
 |---|---|
-| Ana Júlia Soares de Oliveira | (preencher) |
-| Arthur Pires Antunes | (preencher) |
-| Diego Rian da Silva | (preencher) |
-| Rafael Roberto de Jesus Ribeiro | (preencher) |
+| Ana Júlia Soares de Oliveira | 
+| Arthur Pires Antunes | 
+| Diego Rian da Silva | 
+| Rafael Roberto de Jesus Ribeiro | 
 
 ---
 
